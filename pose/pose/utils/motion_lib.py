@@ -422,7 +422,7 @@ class MotionLib():
                 motion_config = yaml.load(f, Loader=yaml.SafeLoader)
 
             dir_name = os.path.join(os.path.dirname(motion_file), motion_config['motions']["root"])
-
+            
             motion_list = motion_config['motions']
             for motion_entry in motion_list.keys():
                 if motion_entry == "root":

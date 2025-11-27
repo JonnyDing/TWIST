@@ -44,6 +44,8 @@ from legged_gym.gym_utils.task_registry import task_registry
 
 # ======================= environment registration =======================
 
+task_registry.register("motion_view", HumanoidViewMotion,G1MimicPrivCfg(), G1MimicPrivCfgPPO())
+
 task_registry.register("g1_priv_mimic", G1MimicDistill, G1MimicPrivCfg(), G1MimicPrivCfgPPO())
 
 task_registry.register("g1_stu_rl", G1MimicDistill, G1MimicStuRLCfg(), G1MimicStuRLCfgDAgger())

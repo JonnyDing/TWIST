@@ -45,7 +45,7 @@ def kl_divergence(mu_s, sigma_s, mu_t, sigma_t):
     return torch.log(sigma_t / sigma_s) + (sigma_s**2 + (mu_s - mu_t)**2) / (2 * sigma_t**2) - 0.5
 
 
-def cosine_decay_weight(init_weight, step, total_steps):
+def [cosine_decay_weight(init_weight, step, total_steps):
     return init_weight * (0.5 * (1 + math.cos(math.pi * step / total_steps)))
 
 

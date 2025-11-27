@@ -53,7 +53,7 @@ class MotionLib:
             try:
                 with open(curr_file, "rb") as f:
                     motion_data = pickle.load(f)
-                    
+                    print
                     fps = motion_data["fps"]
                     curr_weight = motion_weights[i]
                     dt = 1.0 / fps
